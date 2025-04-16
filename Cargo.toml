@@ -1,0 +1,10 @@
+[package]
+name = "check_torrent_symlinks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+camino = "1.1.9"
+hightorrent = { path = "../hightorrent" }
+hightorrent_api = { path = "../hightorrent_api" }
+tokio = { version = "1.44.2", features = ["fs", "macros", "rt"] }
